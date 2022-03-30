@@ -293,8 +293,8 @@ export default {
         signetParam: {
           signetMode: '1',
           signetId: '',
-          coordY: '',
-          coordX: ''
+          coordY: '400',
+          coordX: '400'
         }
       },
       proveSave: {
@@ -548,8 +548,8 @@ export default {
         signetParam: {
           signetMode: '1',
           signetId: '',
-          coordY: '',
-          coordX: ''
+          coordY: '400',
+          coordX: '400'
         }
       }
       this.lookPath = ''

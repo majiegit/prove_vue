@@ -52,6 +52,15 @@ export const constantRoutes = [
       { path: 'signet', name: 'signet', component: () => import('@/views/prove/signet'), meta: { title: '签章管理', icon: 'dashboard' }}]
   },
   {
+    path: '/staffenquiry',
+    meta: { title: '员工问询', icon: 'component', roles: ['admin'] },
+    component: Layout,
+    children: [
+      { path: 'index', name: 'staffenquiry', component: () => import('@/views/staffenquiry/enquiry'), meta: { title: '员工问询', icon: 'dashboard' }},
+      { path: 'tag', name: 'tag', component: () => import('@/views/staffenquiry/tag'), meta: { title: '标签管理', icon: 'dashboard' }}
+    ]
+  },
+  {
     path: '/',
     component: Layout,
     redirect: '/dashboard',

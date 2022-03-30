@@ -1,0 +1,44 @@
+.problem_type_row {
+  width: 100%;
+  height: 120px;
+  background: #fff;
+  padding: 10px;
+}
+
+.problem_type_title {
+  width: 100%;
+  height: 25px;
+  position: absolute;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.1);
+  float: left;
+  line-height: 20px;
+  display: none;
+  z-index: 1;
+}
+
+.problem_type_item {
+  width: 110px;
+  height: 110px;
+  margin-left: 50px;
+  float: left;
+  position: relative;
+  border-radius: 15px;
+}
+
+.problem_type_icon {
+  width: 100%;
+  height: 70%;
+  text-align: center;
+  float: left;
+  cursor: pointer;
+}
+
+.problem_type_add {
+  width: 110px;
+  height: 110px;
+  margin-left: 20px;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+}
