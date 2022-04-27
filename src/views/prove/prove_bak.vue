@@ -168,9 +168,9 @@
             </el-form-item>
             <el-form-item label="签章位置:">
               <span>X:</span>
-              <el-input-number v-model="proveForm.signetParam.coordX" controls-position="right" :min="1" :max="1000"></el-input-number>
+              <el-input-number v-model="proveForm.signetParam.coordX"  controls-position="right" :min="1" :max="1000" ></el-input-number>
               <span style="margin-left: 50px;">Y:</span>
-              <el-input-number v-model="proveForm.signetParam.coordY" controls-position="right" :min="1" :max="1000"></el-input-number>
+              <el-input-number v-model="proveForm.signetParam.coordY"  controls-position="right" :min="1" :max="1000"></el-input-number>
             </el-form-item>
             <el-form-item label="签章预览:" v-if="proveForm.signetParam.signetMode === '2' && proveForm.signetParam.signetLook" >
               <img :src= "proveForm.signetParam.signetLook" width="150px;"/>
@@ -293,8 +293,8 @@ export default {
         signetParam: {
           signetMode: '1',
           signetId: '',
-          coordY: '400',
-          coordX: '400'
+          coordY: 400,
+          coordX: 400
         }
       },
       proveSave: {
@@ -548,8 +548,8 @@ export default {
         signetParam: {
           signetMode: '1',
           signetId: '',
-          coordY: '400',
-          coordX: '400'
+          coordY: 400,
+          coordX: 400
         }
       }
       this.lookPath = ''

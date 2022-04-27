@@ -24,7 +24,7 @@ module.exports = {
    * In most cases please use '/' !!!
    * Detail: https://cli.vuejs.org/config/#publicpath
    */
-  publicPath: '/',
+  publicPath: './',
   outputDir: 'dist',
   assetsDir: 'static',
   // lintOnSave: process.env.NODE_ENV === 'development',
@@ -35,7 +35,7 @@ module.exports = {
     open: true,
     proxy: {
       '/prove': {//代理api
-        target: "http://localhost:7012/",// 代理接口
+        target: "http://localhost:7011/",// 代理接口
         changeOrigin: true,//是否跨域
         pathRewrite: {
           "^/prove": 'prove'

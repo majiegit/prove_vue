@@ -4,20 +4,17 @@
       <el-col :span="24">
         <el-table
           :data="sysVarList"
-          style="width: 100%"
-        >
+          style="width: 100%">
           <el-table-column
             type="index"
             label="序号"
-            width="180"
-          >
+            width="180">
           </el-table-column>
           <el-table-column
             prop="name"
             label="参数名称">
             <template slot-scope="scope">
-              <el-select v-model="scope.row.name" filterable placeholder="请选择"
-                         @change="saveVar(scope.row.id,scope.row.name,'name')">
+              <el-select v-model="scope.row.name" filterable placeholder="请选择" @change="saveVar(scope.row.id,scope.row.name,'name')">
                 <el-option
                   v-for="item in options"
                   :key="item.tpVarName"
@@ -34,8 +31,7 @@
           <el-table-column
             label="备注">
             <template slot-scope="scope">
-              <el-input v-model="scope.row.remark" placeholder="备注"
-                        @blur="saveVar(scope.row.id,scope.row.remark,'remark')"></el-input>
+              <el-input v-model="scope.row.remark" placeholder="备注" @blur="saveVar(scope.row.id,scope.row.remark,'remark')"></el-input>
             </template>
           </el-table-column>
           <el-table-column
@@ -56,7 +52,7 @@
 </template>
 
 <script>
-  import {listSysVar, saveVar, deleteVar, getTpVarListGroup} from '@/api/prove'
+  import { listSysVar, saveVar, deleteVar, getTpVarListGroup } from '@/api/prove'
 
   export default {
     data() {
